@@ -299,7 +299,7 @@ function login_user($email,$password,$remember){
 
         $email = clean($_POST['email']);
 
-        if(email_exists($email)){ //Checking for email whether it it exists or not on DB
+        if(email_exists($email)){ //Checking for email whether it is exists or not on DB
 
           $validation_code = md5($email + microtime()); //crypting validation_code with md5 function
 
